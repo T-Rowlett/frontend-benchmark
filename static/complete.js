@@ -10,7 +10,6 @@ function updateentrie(data) {
 }
 entrie.addEventListener("input", () => {
     const url = `/api/input?q=${entrie.value}`;
-
     fetch(url)
         .then(response => response.json())
         .then(updateentrie);
